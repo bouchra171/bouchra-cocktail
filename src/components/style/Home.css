@@ -1,0 +1,13 @@
+.title {
+	text-align: center;
+}
+.cocktails {
+	margin: 0 auto;
+	max-width: 90%;
+	height: 500px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

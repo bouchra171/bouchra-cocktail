@@ -1,13 +1,17 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+const express = require("express");
 
-import App from "./App";
+const router = express.Router();
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const cocktails = require("../public/js/cocktails");
 
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+// router.get('/', (_, response) => {
+// response.send('Hello COCKTAILS');
+// });
+
+router.get("/", (_, response) => {
+  const typesList = new Set();
+  cocktails.forEach((cocktail) => {
+    typesList.add(cocktail.type);
+  });
+
+ 

@@ -1,0 +1,21 @@
+/* start about section  */
+.section_title {
+	text-align: center;
+	font-size: 3rem;
+	letter-spacing: 10px;
+	font-weight: bolder;
+	margin-top: 170px;
+}
+.section_text {
+	width: 75%;
+	margin: 0 auto;
+	font-size: large;
+	letter-spacing: 3px;
+}
+.link {
+	width: 80px;
+	height: 30px;
+	padding-left: 30px;
+	cursor: pointer;
+	text-decoration: none;
+}

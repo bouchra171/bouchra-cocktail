@@ -1,0 +1,37 @@
+.nav-links {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.nav-links li {
+	margin-right: 20px;
+	margin-left: 40px;
+}
+
+.nav-links li a {
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 90px;
+	background-color: #9c2424;
+	border-bottom: 3px solid black;
+	margin-bottom: 3rem;
+}
+
+.logo {
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+}
