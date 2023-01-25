@@ -1,9 +1,9 @@
 import "./styles.css";
-import "./Home.js";
-import "Navbar.js";
-import "Cocktails.js";
-import "./CocktailDetails.js";
-import "About.js";
+import "components/Home";
+import "components/Navbar";
+import "components/Cocktails";
+import "components/CocktailDetails";
+import "components/About";
 
 export default function App() {
   return (

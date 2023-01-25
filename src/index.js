@@ -1,17 +1,15 @@
-const express = require("express");
+import React from "react";
+import ReactDom from "react-dom/client";
+import "./styles.css";
+import App from "./App";
+import reportWebVtals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 
-const router = express.Router();
-
-const cocktails = require("../public/js/cocktails");
-
-// router.get('/', (_, response) => {
-// response.send('Hello COCKTAILS');
-// });
-
-router.get("/", (_, response) => {
-  const typesList = new Set();
-  cocktails.forEach((cocktail) => {
-    typesList.add(cocktail.type);
-  });
-
- 
+const root = React.creatRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </React.StrictMode>
+);
